@@ -11,3 +11,6 @@
 3. git commit -m "first commit"
 4. git remote add origin https://github.com/tolyanoo95/wooCommerce.git
 5. git push -u origin master
+
+1. git remote add origin https://github.com/tolyanoo95/myTemplate.git
+2. git push -u origin master
