@@ -276,3 +276,7 @@
 ?>
 <? go_filter(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+/*
+{"settings":{"toolbar_1":"formatselect,bold,italic,blockquote,bullist,numlist,alignleft,aligncenter,alignright,link,unlink,undo,redo","toolbar_2":"fontselect,fontsizeselect,outdent,indent,pastetext,removeformat,visualchars,charmap,wp_more,forecolor,table,wp_help","toolbar_3":"underline,strikethrough,copy,paste,hr,print,searchreplace,anchor,visualblocks,fullscreen,nonbreaking,rtl,ltr,emoticons,wp_page,tadv_mark","toolbar_4":"alignjustify,styleselect,cut,superscript,subscript,image,wp_code,media,code,insertdatetime,backcolor","options":"menubar,advlist","plugins":"anchor,visualchars,visualblocks,nonbreaking,emoticons,insertdatetime,table,print,searchreplace,code,advlist"},"admin_settings":{"options":"no_autop","disabled_editors":""}}
+*/
