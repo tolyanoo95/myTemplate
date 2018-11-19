@@ -17,9 +17,8 @@
 		Post Types Order
 		Contact Form 7
 		Cyr to Lat enhanced
-		EWWW Image Optimizer
-		WP Smush
-		Compress JPEG & PNG images
+		Robin image optimizer
+		Lazy Load
 		iThemes Security Pro
 		Yoast SEO Premium
 		Toolset Types
