@@ -150,11 +150,13 @@
 				if($item->menu_item_parent == 0):
 					$menu[$count]['title'] =  $item->title;
 					$menu[$count]['url'] = $item->url;
+					$menu[$count]['id'] = $item->object_id;
 				endif;
 				foreach($menu_items as $item_sub):
 					if($item_sub->menu_item_parent == $item->db_id):
 					$menu[$count]['sub'][$count_sub]['title'] = $item_sub->title;
 						$menu[$count]['sub'][$count_sub]['url'] = $item_sub->url;
+						$menu[$count]['sub'][$count_sub]['id'] = $item_sub->object_id;
 						$count_sub++;
 					endif;
 				endforeach;
