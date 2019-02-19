@@ -105,6 +105,16 @@
 <? $url = get_sub_field(''); if(!empty($url)){ echo $url; } ?>
 <? $url = get_field(''); if(!empty($url)){ echo $url; } ?>
 
+<?php
+$post = $wp_query->post;
+
+if ( in_category( 'command' ) ) {
+  include( TEMPLATEPATH.'/single-command.php' );
+  exit;
+} 
+
+?>
+
 
 <? $i = 1; ?>
 <? if(($i%3) == 0): ?>
