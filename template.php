@@ -112,9 +112,7 @@ if ( in_category( 'command' ) ) {
   include( TEMPLATEPATH.'/single-command.php' );
   exit;
 } 
-
 ?>
-
 
 <? $i = 1; ?>
 <? if(($i%3) == 0): ?>
