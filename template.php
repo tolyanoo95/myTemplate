@@ -289,3 +289,19 @@ if ( in_category( 'command' ) ) {
 /*
 {"settings":{"toolbar_1":"formatselect,bold,italic,blockquote,bullist,numlist,alignleft,aligncenter,alignright,link,unlink,undo,redo","toolbar_2":"fontselect,fontsizeselect,outdent,indent,pastetext,removeformat,visualchars,charmap,wp_more,forecolor,table,wp_help","toolbar_3":"underline,strikethrough,copy,paste,hr,print,searchreplace,anchor,visualblocks,fullscreen,nonbreaking,rtl,ltr,emoticons,wp_page,tadv_mark","toolbar_4":"alignjustify,styleselect,cut,superscript,subscript,image,wp_code,media,code,insertdatetime,backcolor","options":"menubar,advlist","plugins":"anchor,visualchars,visualblocks,nonbreaking,emoticons,insertdatetime,table,print,searchreplace,code,advlist"},"admin_settings":{"options":"no_autop","disabled_editors":""}}
 */
+
+<?php
+$my_descr = get_post_meta($post->ID, "_aioseop_description", true);
+if ($my_descr){
+echo  "<p>$my_descr</p>";
+}
+else echo  "Нет описания для данной страницы";
+?>
+
+<?php
+$my_descr = get_post_meta($post->ID, "_yoast_wpseo_metadesc", true);
+if ($my_descr){
+echo  "$my_descr";
+}
+else echo  "Нет описания для данной страницы";
+?>
