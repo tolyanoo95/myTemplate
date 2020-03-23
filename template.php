@@ -305,3 +305,34 @@ echo  "$my_descr";
 }
 else echo  "Нет описания для данной страницы";
 ?>
+
+<?
+$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
+   
+   $args = array(
+       'posts_per_page' => 5,
+       'post_type' => 'comment',
+       'paged' => $paged,
+   );
+   
+   $the_query = new WP_Query( $args );
+ 
+    
+$big = 999999999; // need an unlikely integer
+
+echo paginate_links( array(
+    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+    'format' => '?paged=%#%',
+    'current' => max( 1, get_query_var('paged') ),
+    'total' => $the_query->max_num_pages
+) );
+?>
+
+<?
+
+$field_key = "field_5657dffe586cc";
+$value = get_field($field_key, 111);
+$value[] = array("career_enjoyment_id" => "Foo", "career_enjoyment_file" => "Bar");
+update_field( $field_key, $value, 111 );
+
+?>
