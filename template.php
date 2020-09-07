@@ -207,8 +207,8 @@ if ( in_category( 'command' ) ) {
 	<li><a href="<? echo $item['url'] ?>" <? if(!empty($item['sub'])){ echo "class='down'"; } ?>><? echo $item['title'] ?></a>
 		<? if(!empty($item['sub'])): ?>
 			<ul class="sub-menu">
-				<? foreach($item['sub'] as $item): ?>
-					<li><a href="<? echo $item['url'] ?>"><? echo $item['title'] ?></a></li>
+				<? foreach($item['sub'] as $sub_item): ?>
+					<li><a href="<? echo $sub_item['url'] ?>"><? echo $sub_item['title'] ?></a></li>
 				<? endforeach; ?>
 			</ul>
 		<? endif; ?>
